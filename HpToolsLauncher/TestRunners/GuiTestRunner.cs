@@ -313,7 +313,7 @@ namespace HpToolsLauncher
                 var options = (RunResultsOptions)Activator.CreateInstance(runResultsOptionstype);
                 options.ResultsLocation = testResults.ReportLocation;
                 _qtpApplication.Options.Run.RunMode = "Normal";
-                _qtpApplication.Options.Run.StepExecutionDelay = 200;
+                _qtpApplication.Options.Run.StepExecutionDelay = 500;
 
                 //Check for cancel before executing
                 if (_runCancelled())
